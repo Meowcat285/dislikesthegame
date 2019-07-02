@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="main" id="BYZ-38-t0r" customClass="ViewController" customModule="dislikegame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOi-EI-AeI">
+                                <rect key="frame" x="277" y="347" width="214" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="WKx-IL-X7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDn-j0-CGY">
+                                <rect key="frame" x="301" y="291" width="166" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="wNb-Bz-uap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dislikes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAK-jv-MSB">
+                                <rect key="frame" x="318" y="402" width="132" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="uXe-af-SnV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-L9-XBa">
+                                <rect key="frame" x="20" y="20" width="36" height="30"/>
+                                <state key="normal" title="Shop"/>
+                                <connections>
+                                    <action selector="shop:" destination="BYZ-38-t0r" eventType="touchDown" id="SOL-tQ-2kI"/>
+                                    <action selector="shoptrigger:" destination="aEm-ci-dVS" eventType="touchUpInside" id="PQ0-ng-fAA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9Q-Qn-7tt">
+                                <rect key="frame" x="709" y="20" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchDown" id="NFh-Wi-ICY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTr-Ga-OI1">
+                                <rect key="frame" x="309" y="458" width="150" height="149"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="Image">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="dislike:" destination="BYZ-38-t0r" eventType="touchDown" id="D9T-Nz-s9G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rOi-EI-AeI" firstAttribute="top" secondItem="RDn-j0-CGY" secondAttribute="bottom" constant="8" symbolic="YES" id="38G-wp-m2M"/>
+                            <constraint firstItem="RDn-j0-CGY" firstAttribute="centerX" secondItem="pAK-jv-MSB" secondAttribute="centerX" id="3FH-XT-2RG"/>
+                            <constraint firstItem="RDn-j0-CGY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="55x-P8-Zxk"/>
+                            <constraint firstItem="RDn-j0-CGY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6p1-NS-PGw"/>
+                            <constraint firstItem="f2h-L9-XBa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BDR-EG-nMO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gTr-Ga-OI1" secondAttribute="bottom" constant="417" id="CHf-ls-2ZQ"/>
+                            <constraint firstItem="gTr-Ga-OI1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="309" id="KxN-rd-oBd"/>
+                            <constraint firstItem="f2h-L9-XBa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lh7-nb-pQ6"/>
+                            <constraint firstItem="gTr-Ga-OI1" firstAttribute="top" secondItem="pAK-jv-MSB" secondAttribute="bottom" constant="8" symbolic="YES" id="SNb-Zm-w50"/>
+                            <constraint firstItem="pAK-jv-MSB" firstAttribute="top" secondItem="rOi-EI-AeI" secondAttribute="bottom" constant="8" symbolic="YES" id="WI0-Wq-Mhj"/>
+                            <constraint firstItem="rOi-EI-AeI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="277" id="bLx-KL-Ffz"/>
+                            <constraint firstItem="pAK-jv-MSB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="318" id="hFe-D5-L9P"/>
+                            <constraint firstItem="f2h-L9-XBa" firstAttribute="baseline" secondItem="C9Q-Qn-7tt" secondAttribute="baseline" id="taN-KX-Tp8"/>
+                            <constraint firstItem="pAK-jv-MSB" firstAttribute="centerX" secondItem="gTr-Ga-OI1" secondAttribute="centerX" id="uym-Ai-y20"/>
+                            <constraint firstItem="C9Q-Qn-7tt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wDy-FQ-BZ9"/>
+                            <constraint firstItem="RDn-j0-CGY" firstAttribute="centerX" secondItem="rOi-EI-AeI" secondAttribute="centerX" id="zAf-oV-td8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="disview" destination="rOi-EI-AeI" id="ocQ-Ft-9p5"/>
+                        <segue destination="SYM-Nv-otc" kind="popoverPresentation" identifier="shop" popoverAnchorView="f2h-L9-XBa" id="8sp-fr-Y5D">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                            <popoverPassthroughViews>
+                                <view reference="8bC-Xf-vdC"/>
+                            </popoverPassthroughViews>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="aEm-ci-dVS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="79.6875" y="104.8828125"/>
+        </scene>
+        <!--shop-->
+        <scene sceneID="7qn-YM-hhS">
+            <objects>
+                <viewController title="shop" id="SYM-Nv-otc" customClass="shopViewController" customModule="dislikegame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UV9-o4-4f0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLB-cv-cyw">
+                                <rect key="frame" x="52" y="20" width="216" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yT5-21-Wq2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="glR-NV-5eD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPp-Yx-GiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.8125" y="104.8828125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="512" height="512"/>
+    </resources>
+</document>
